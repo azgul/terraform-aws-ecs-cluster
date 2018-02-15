@@ -23,8 +23,7 @@ module "autoscaling" {
   source = "terraform-aws-modules/autoscaling/aws"
   version = "2.1.0"
 
-
-  name = "${var.name}AutoScaling"
+  name = "${var.name}"
 
   # Launch configuration
   lc_name = "${var.name}LaunchConfiguration"
